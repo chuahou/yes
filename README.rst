@@ -40,6 +40,9 @@ These results are **completely not rigorous**. Each test was only run
 once for a total of 5 seconds each, which I believe was sufficient
 enough to see the improvements in each.
 
+The percentages for each speed is of the speed of the intial test of
+GNU yes.
+
 GNU yes
 -------
 yes
@@ -54,7 +57,7 @@ shunroll.sh (``echo "y\ny\ny\n..."``)
 	40.1 MiB/s (0.71%)—Less overhead due to less calls to ``echo``,
 	since each call prints multiple lines of ``y\n``.
 
-Haskell (``ghci``)
+Haskell (``ghc``)
 ------------------
 hs
 	12.3 MiB/s (0.21%)
