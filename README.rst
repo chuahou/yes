@@ -10,6 +10,9 @@ an endless loop of ``y\n``.
 Inspired by, and C solutions based on, `this Reddit post
 <https://www.reddit.com/r/unix/comments/6gxduc/how_is_gnu_yes_so_fast/>`_.
 
+``hsbyte`` based on `this Reddit comment
+<https://www.reddit.com/r/programming/comments/6gxf02/how_is_gnus_yes_so_fast_xpost_runix/diufu49/>`_.
+
 Usage
 ======
 
@@ -66,6 +69,10 @@ hslist (infinite list)
 hsbuf (manual flush every 8192)
 	196 MiB/s (3.46%)—Vast improvements from manually flushing and
 	disabling flushing upon every newline.
+hsbyte (use ``ByteString.Char 8``)
+	4.08 GiB/s (73.78%)—Extreme improvements from using ``ByteString``
+	instead (based on `this Reddit comment
+	<https://www.reddit.com/r/programming/comments/6gxf02/how_is_gnus_yes_so_fast_xpost_runix/diufu49/>`_).
 
 C (``gcc -O3 -g``)
 ------------------
