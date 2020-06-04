@@ -7,6 +7,4 @@ main :: IO ()
 main = yes ys
 
 yes :: [Char] -> IO ()
-yes (c:cs) = do
-    putChar c
-    yes cs
+yes (c:cs) = putChar c >> yes cs

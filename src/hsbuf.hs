@@ -13,7 +13,4 @@ main = do
     yes . take bufSize $ ys
 
 yes :: [Char] -> IO ()
-yes ys = do
-    putStr ys
-    hFlush stdout
-    yes ys
+yes ys = putStr ys >> hFlush stdout >> yes ys
