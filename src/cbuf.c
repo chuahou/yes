@@ -16,6 +16,6 @@ int main(void)
 		ys[i+1] = ys[1];
 	}
 	while (1)
-		write(STDOUT, "y\n", BUF_SIZE);
+		write(STDOUT, ys, BUF_SIZE);
 	return 1; // not reached
 }
